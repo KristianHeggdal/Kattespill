@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+#matTeller{
+    height: 15px;
+    width: 50px;
+ border: 5px solid;
+ border-color: black;
+ border-width: 3px;
+ padding: 10px;
+
+}
+
+
+
+
+
+</style>
+
+<body>
+
+
+   <div id="matTeller">Mat: <span id="counter">0</span></div>
+
+
+    <script>
+
+
+let count=0
+
+function startCounter(){
+count++;
+document.getElementById("counter").innerHTML=count;
+}
+
+setInterval(startCounter,1000);
+
+function giMat(){
+clearInterval(counter);
+count = 0;
+document.getElementById("counter").innerHTML=count;
+}
+
+document.getElementById("matTeller").addEventListener("click",giMat)
+
+
+
+    </script>
+</body>
+</html>
